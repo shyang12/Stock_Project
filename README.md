@@ -3,7 +3,7 @@
  
  - Eclipse에서 Java를 기반으로 모의 주식 투자 서비스를 구현하는 프로젝트
 
-`JSOUP` `SWING` `Parsing`
+`JSOUP` `SWING` `Parsing` `Thread`
 
 ## 1. Co-Development Environment   
 ### 1. 1 Environments
@@ -19,6 +19,7 @@
 - KOSPI top 100의 정보를 볼 수 있는 기능 -> `가격이 올라간 주식은 빨간색, 내려간 주식은 파란색 색깔 적용` + `Parsing`
 - KOSDAQ 주식의 정보를 볼 수 있는 기능 -> `가격이 올라간 주식은 빨간색, 내려간 주식은 파란색 색깔 적용` + `Parsing`
 - KOSPI, KOSDAQ의 현제 주식 현황을 확인하는 기능 -> `가격이 올라간 주식은 빨간색, 내려간 주식은 파란색 색깔 적용` + `Parsing`
+- 초마다 주식의 순위, 가격등 변하는 값들은 1초마다 갱신되도록 적용 -> `Thread`를 사용하여 초마다 파싱한 값을 갱신
 - 주식을 모의로 매수, 매도하는 기능
 - 보유한 주식 현황을 보여줌
   
